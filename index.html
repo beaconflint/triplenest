@@ -5,9 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Triple Nest | Rental Home</title>
-  <meta name="description" content="Triple Nest LLC rental property. A three-bedroom home currently being prepared for future availability.">
+
+  <meta
+    name="description"
+    content="Triple Nest LLC rental property. A three-bedroom home currently being prepared for future availability."
+  >
 
   <style>
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -25,7 +30,10 @@
       line-height: 1.6;
     }
 
-    /* NAVIGATION */
+
+    /* =========================
+       NAVIGATION
+       ========================= */
 
     nav {
       background: #ffffff;
@@ -57,17 +65,27 @@
       color: #6d856f;
     }
 
-    /* HERO */
+
+    /* =========================
+       HERO
+       ========================= */
 
     .hero {
       min-height: 620px;
+
       background:
-        linear-gradient(rgba(25,35,29,.42), rgba(25,35,29,.48)),
+        linear-gradient(
+          rgba(25,35,29,.42),
+          rgba(25,35,29,.48)
+        ),
         url("https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1800&q=85");
+
       background-size: cover;
       background-position: center;
+
       display: flex;
       align-items: center;
+
       padding: 60px 8%;
       color: white;
     }
@@ -78,13 +96,17 @@
 
     .coming-soon {
       display: inline-block;
+
       background: #e8ddc4;
       color: #314b3a;
+
       padding: 8px 15px;
       border-radius: 30px;
+
       font-size: 12px;
       font-weight: bold;
       letter-spacing: 1.5px;
+
       margin-bottom: 20px;
     }
 
@@ -102,13 +124,18 @@
 
     .button {
       display: inline-block;
+
       padding: 14px 25px;
+
       background: #ffffff;
       color: #314b3a;
+
       text-decoration: none;
       border-radius: 4px;
+
       font-weight: bold;
-      transition: .2s ease;
+
+      transition: .2s;
     }
 
     .button:hover {
@@ -116,12 +143,10 @@
       opacity: .92;
     }
 
-    .green-button {
-      background: #314b3a;
-      color: #ffffff;
-    }
 
-    /* GENERAL */
+    /* =========================
+       GENERAL
+       ========================= */
 
     section {
       padding: 80px 8%;
@@ -144,7 +169,10 @@
       margin: auto;
     }
 
-    /* PROPERTY */
+
+    /* =========================
+       PROPERTY
+       ========================= */
 
     .property {
       background: white;
@@ -153,8 +181,10 @@
     .property-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
+
       gap: 60px;
       align-items: center;
+
       max-width: 1200px;
       margin: auto;
     }
@@ -162,6 +192,7 @@
     .property-image img {
       width: 100%;
       height: 450px;
+
       object-fit: cover;
       border-radius: 5px;
     }
@@ -200,7 +231,10 @@
       color: #777;
     }
 
-    /* GALLERY */
+
+    /* =========================
+       GALLERY
+       ========================= */
 
     .gallery {
       background: #f1efe8;
@@ -209,30 +243,39 @@
     .gallery-grid {
       max-width: 1200px;
       margin: auto;
+
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+
       gap: 15px;
     }
 
     .gallery-grid img {
       width: 100%;
       height: 280px;
+
       object-fit: cover;
       border-radius: 4px;
     }
 
     .photo-note {
       text-align: center;
+
       font-size: 12px;
       color: #888;
+
       margin-top: 18px;
     }
 
-    /* AVAILABILITY */
+
+    /* =========================
+       AVAILABILITY
+       ========================= */
 
     .availability {
       background: #314b3a;
       color: white;
+
       text-align: center;
     }
 
@@ -243,80 +286,109 @@
 
     .availability p {
       max-width: 700px;
+
       margin: 0 auto 30px;
+
       color: #e1e7e2;
     }
 
     .availability .button {
       background: #e8ddc4;
-      color: #314b3a;
     }
 
-    /* RENTAL INTEREST */
 
-    .interest {
+    /* =========================
+       EMBEDDED FORMS
+       ========================= */
+
+    .form-section {
       background: #ffffff;
     }
 
-    .interest-box {
-      max-width: 800px;
+    .form-wrapper {
+      max-width: 900px;
       margin: auto;
-      background: #f3f1ea;
-      padding: 55px 45px;
+    }
+
+    .form-heading {
       text-align: center;
-      border-radius: 5px;
+      margin-bottom: 35px;
     }
 
-    .interest-box h2 {
+    .form-heading h2 {
       color: #314b3a;
-      font-size: 34px;
-      margin-bottom: 15px;
+
+      font-size: 36px;
+      margin-bottom: 12px;
     }
 
-    .interest-box p {
+    .form-heading p {
       color: #666;
-      max-width: 650px;
-      margin: 0 auto 28px;
+
+      max-width: 680px;
+      margin: auto;
     }
 
-    .interest-box small {
+    .form-container {
+      background: #f3f1ea;
+
+      padding: 25px;
+
+      border-radius: 7px;
+
+      box-shadow: 0 3px 15px rgba(0,0,0,.05);
+    }
+
+    .form-container iframe {
+      width: 100%;
+
+      border: none;
+
       display: block;
-      color: #888;
-      max-width: 620px;
-      margin: 22px auto 0;
-      line-height: 1.5;
+
+      background: transparent;
     }
 
-    /* CONTACT */
+    .interest-frame {
+      height: 1250px;
+    }
+
+    .contact-frame {
+      height: 850px;
+    }
+
+    .form-note {
+      text-align: center;
+
+      color: #777;
+      font-size: 12px;
+
+      margin-top: 18px;
+    }
+
+
+    /* =========================
+       CONTACT
+       ========================= */
 
     .contact {
       background: #f1efe8;
     }
 
-    .contact-box {
-      max-width: 750px;
-      margin: auto;
-      text-align: center;
-    }
 
-    .contact-box h2 {
-      color: #314b3a;
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
-
-    .contact-box p {
-      color: #666;
-      margin-bottom: 25px;
-    }
-
-    /* FOOTER */
+    /* =========================
+       FOOTER
+       ========================= */
 
     footer {
       background: #202923;
+
       color: #bbb;
+
       text-align: center;
+
       padding: 30px 20px;
+
       font-size: 13px;
     }
 
@@ -324,7 +396,10 @@
       color: white;
     }
 
-    /* MOBILE */
+
+    /* =========================
+       MOBILE
+       ========================= */
 
     @media (max-width: 800px) {
 
@@ -350,7 +425,7 @@
       }
 
       section {
-        padding: 60px 6%;
+        padding: 60px 5%;
       }
 
       .property-grid {
@@ -362,6 +437,10 @@
         height: 320px;
       }
 
+      .features {
+        grid-template-columns: 1fr;
+      }
+
       .gallery-grid {
         grid-template-columns: 1fr;
       }
@@ -370,49 +449,90 @@
         height: 300px;
       }
 
-      .interest-box {
-        padding: 35px 20px;
+      .form-container {
+        padding: 8px;
       }
+
+      .interest-frame {
+        height: 1350px;
+      }
+
+      .contact-frame {
+        height: 900px;
+      }
+
     }
+
   </style>
 </head>
 
 
 <body>
 
-  <!-- NAVIGATION -->
+
+  <!-- =========================
+       NAVIGATION
+       ========================= -->
 
   <nav>
 
-    <div class="logo">TRIPLE NEST</div>
+    <div class="logo">
+      TRIPLE NEST
+    </div>
 
     <div class="nav-links">
-      <a href="#property">The Home</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#availability">Availability</a>
-      <a href="#interest">Rental Interest</a>
-      <a href="#contact">Contact</a>
+
+      <a href="#property">
+        The Home
+      </a>
+
+      <a href="#gallery">
+        Gallery
+      </a>
+
+      <a href="#availability">
+        Availability
+      </a>
+
+      <a href="#rental-interest">
+        Rental Interest
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
     </div>
 
   </nav>
 
 
-  <!-- HERO -->
+
+  <!-- =========================
+       HERO
+       ========================= -->
 
   <header class="hero">
 
     <div class="hero-content">
 
-      <div class="coming-soon">COMING SOON</div>
+      <div class="coming-soon">
+        COMING SOON
+      </div>
 
-      <h1>A Place to Call Home.</h1>
+      <h1>
+        A Place to Call Home.
+      </h1>
 
       <p>
         A three-bedroom home currently being prepared
         for future rental availability.
       </p>
 
-      <a class="button" href="#property">
+      <a
+        class="button"
+        href="#property"
+      >
         Learn More
       </a>
 
@@ -421,13 +541,21 @@
   </header>
 
 
-  <!-- PROPERTY -->
 
-  <section class="property" id="property">
+  <!-- =========================
+       PROPERTY
+       ========================= -->
+
+  <section
+    class="property"
+    id="property"
+  >
 
     <div class="section-title">
 
-      <h2>The Home</h2>
+      <h2>
+        The Home
+      </h2>
 
       <p>
         Triple Nest LLC is preparing this property for future residents.
@@ -439,18 +567,22 @@
 
     <div class="property-grid">
 
+
       <div class="property-image">
 
         <img
           src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=85"
-          alt="Sample residential home">
+          alt="Sample residential home"
+        >
 
       </div>
 
 
       <div class="property-text">
 
-        <h3>Comfortable Residential Living</h3>
+        <h3>
+          Comfortable Residential Living
+        </h3>
 
         <p>
           The property is currently being improved and prepared for rental.
@@ -462,23 +594,54 @@
         <div class="features">
 
           <div class="feature">
-            <strong>3 Bedrooms</strong>
-            <span>Residential home</span>
+
+            <strong>
+              3 Bedrooms
+            </strong>
+
+            <span>
+              Residential home
+            </span>
+
           </div>
 
-          <div class="feature">
-            <strong>Future Rental</strong>
-            <span>Availability to be announced</span>
-          </div>
 
           <div class="feature">
-            <strong>Improvements</strong>
-            <span>Property preparation underway</span>
+
+            <strong>
+              Future Rental
+            </strong>
+
+            <span>
+              Availability to be announced
+            </span>
+
           </div>
 
+
           <div class="feature">
-            <strong>More Details</strong>
-            <span>Coming as the home is completed</span>
+
+            <strong>
+              Improvements
+            </strong>
+
+            <span>
+              Property preparation underway
+            </span>
+
+          </div>
+
+
+          <div class="feature">
+
+            <strong>
+              More Details
+            </strong>
+
+            <span>
+              Coming as the home is completed
+            </span>
+
           </div>
 
         </div>
@@ -490,13 +653,21 @@
   </section>
 
 
-  <!-- GALLERY -->
 
-  <section class="gallery" id="gallery">
+  <!-- =========================
+       GALLERY
+       ========================= -->
+
+  <section
+    class="gallery"
+    id="gallery"
+  >
 
     <div class="section-title">
 
-      <h2>Property Preview</h2>
+      <h2>
+        Property Preview
+      </h2>
 
       <p>
         Current property photographs will be added as improvements are completed.
@@ -507,19 +678,26 @@
 
     <div class="gallery-grid">
 
+
       <img
         src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
-        alt="Sample home exterior">
+        alt="Sample home exterior"
+      >
+
 
       <img
         src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80"
-        alt="Sample living room">
+        alt="Sample living room"
+      >
+
 
       <img
         src="https://images.unsplash.com/photo-1560185008-b033106af5c3?auto=format&fit=crop&w=900&q=80"
-        alt="Sample home interior">
+        alt="Sample home interior"
+      >
 
     </div>
+
 
     <p class="photo-note">
       Preview images are temporary examples and do not depict the actual property.
@@ -528,11 +706,19 @@
   </section>
 
 
-  <!-- AVAILABILITY -->
 
-  <section class="availability" id="availability">
+  <!-- =========================
+       AVAILABILITY
+       ========================= -->
 
-    <h2>Future Availability</h2>
+  <section
+    class="availability"
+    id="availability"
+  >
+
+    <h2>
+      Future Availability
+    </h2>
 
     <p>
       The home is not currently available for rent.
@@ -541,77 +727,126 @@
       will be posted here when the property is ready.
     </p>
 
-    <a class="button" href="#interest">
+
+    <a
+      class="button"
+      href="#rental-interest"
+    >
       Rental Interest
     </a>
 
   </section>
 
 
-  <!-- RENTAL INTEREST -->
 
-  <section class="interest" id="interest">
+  <!-- =========================
+       RENTAL INTEREST FORM
+       ========================= -->
 
-    <div class="interest-box">
+  <section
+    class="form-section"
+    id="rental-interest"
+  >
 
-      <h2>Interested in This Home?</h2>
+    <div class="form-wrapper">
 
-      <p>
-        The property is currently being prepared for future rental
-        availability. If you would like to hear about future availability,
-        you may submit your information to our rental interest list.
+
+      <div class="form-heading">
+
+        <h2>
+          Interested in This Home?
+        </h2>
+
+        <p>
+          If you would like to hear about future availability,
+          submit your information below.
+        </p>
+
+      </div>
+
+
+      <div class="form-container">
+
+        <iframe
+          class="interest-frame"
+          src="https://docs.google.com/forms/d/e/1FAIpQLScUImDtZZHWFvzJoACexCCga2LNamKmKUREsj8hGcJ60gQP5A/viewform?embedded=true"
+          title="Triple Nest Rental Interest Form"
+          loading="lazy"
+        >
+          Loading…
+        </iframe>
+
+      </div>
+
+
+      <p class="form-note">
+        Submitting an interest form is not a rental application
+        and does not guarantee availability, approval,
+        or reservation of the property.
       </p>
-
-      <a
-        class="button green-button"
-        href="https://docs.google.com/forms/d/e/1FAIpQLScUImDtZZHWFvzJoACexCCga2LNamKmKUREsj8hGcJ60gQP5A/viewform"
-        target="_blank"
-        rel="noopener noreferrer">
-        Submit Rental Interest
-      </a>
-
-      <small>
-        Submitting an interest form is not a rental application and does
-        not guarantee availability, approval, or reservation of the property.
-      </small>
 
     </div>
 
   </section>
 
 
-  <!-- CONTACT -->
 
-  <section class="contact" id="contact">
+  <!-- =========================
+       CONTACT FORM
+       ========================= -->
 
-    <div class="contact-box">
+  <section
+    class="contact"
+    id="contact"
+  >
 
-      <h2>Contact Triple Nest</h2>
+    <div class="form-wrapper">
 
-      <p>
-        Have a question about future rental availability?
-        You can send your contact information and questions through
-        our rental interest form.
-      </p>
 
-      <a
-        class="button green-button"
-        href="https://docs.google.com/forms/d/e/1FAIpQLScUImDtZZHWFvzJoACexCCga2LNamKmKUREsj8hGcJ60gQP5A/viewform"
-        target="_blank"
-        rel="noopener noreferrer">
-        Contact Us
-      </a>
+      <div class="form-heading">
+
+        <h2>
+          Contact Triple Nest
+        </h2>
+
+        <p>
+          Have a question about the property?
+          Send us a message below.
+        </p>
+
+      </div>
+
+
+      <div class="form-container">
+
+        <iframe
+          class="contact-frame"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeMXYcwD-VSyMSRRWSvbY5Va-El2Vz0FPuam_cRcmTeq6SiAw/viewform?embedded=true"
+          title="Triple Nest Contact Form"
+          loading="lazy"
+        >
+          Loading…
+        </iframe>
+
+      </div>
 
     </div>
 
   </section>
 
 
-  <!-- FOOTER -->
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
 
   <footer>
 
-    <strong>Triple Nest LLC</strong><br>
+    <strong>
+      Triple Nest LLC
+    </strong>
+
+    <br>
 
     Property Management &nbsp;•&nbsp; Indiana
 
