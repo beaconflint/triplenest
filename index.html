@@ -44,10 +44,109 @@
     }
 
     .logo {
+      display: flex;
+      align-items: center;
+      color: #314b3a;
+      white-space: nowrap;
+    }
+
+    .logo-wordmark {
+      display: flex;
+      align-items: center;
+      gap: 1px;
       font-size: 24px;
       font-weight: 700;
       letter-spacing: 1px;
-      color: #314b3a;
+      line-height: 1;
+    }
+
+    .logo-e {
+      position: relative;
+      display: inline-block;
+      width: 18px;
+      height: 24px;
+      margin: 0 1px;
+    }
+
+    .logo-e::before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 1px;
+      width: 3px;
+      height: 22px;
+      background: #314b3a;
+      border-radius: 2px;
+    }
+
+    .logo-e .e-top,
+    .logo-e .e-bottom {
+      position: absolute;
+      left: 2px;
+      width: 15px;
+      height: 3px;
+      background: #314b3a;
+      border-radius: 2px;
+    }
+
+    .logo-e .e-top {
+      top: 1px;
+    }
+
+    .logo-e .e-bottom {
+      bottom: 1px;
+    }
+
+    .logo-e .e-leaf {
+      position: absolute;
+      left: 5px;
+      top: 9px;
+      width: 11px;
+      height: 6px;
+      background: #6d856f;
+      border-radius: 100% 0 100% 0;
+      transform: rotate(-8deg);
+    }
+
+    .logo-accent {
+      position: relative;
+      width: 22px;
+      height: 24px;
+      margin-left: 5px;
+      flex: 0 0 auto;
+    }
+
+    .logo-accent .stem {
+      position: absolute;
+      left: 8px;
+      top: 4px;
+      width: 2px;
+      height: 12px;
+      background: #6b5239;
+      transform: rotate(28deg);
+      transform-origin: bottom center;
+      border-radius: 2px;
+    }
+
+    .logo-accent .leaf {
+      position: absolute;
+      left: 1px;
+      top: 4px;
+      width: 11px;
+      height: 6px;
+      background: #6d856f;
+      border-radius: 100% 0 100% 0;
+      transform: rotate(-20deg);
+    }
+
+    .logo-accent .berry {
+      position: absolute;
+      right: 1px;
+      bottom: 2px;
+      width: 8px;
+      height: 8px;
+      background: #a74f42;
+      border-radius: 50%;
     }
 
     .nav-links a {
@@ -420,6 +519,22 @@
         display: none;
       }
 
+      .logo-wordmark {
+        font-size: 21px;
+      }
+
+      .logo-e {
+        transform: scale(.9);
+        transform-origin: center;
+        margin: 0;
+      }
+
+      .logo-accent {
+        transform: scale(.9);
+        transform-origin: left center;
+        margin-left: 2px;
+      }
+
       .hero {
         min-height: 520px;
         padding: 50px 6%;
@@ -472,7 +587,29 @@
 <body>
 
   <nav>
-    <div class="logo">TRIPLE NEST</div>
+    <div class="logo" aria-label="Triple Nest">
+      <div class="logo-wordmark">
+        <span>TRIPL</span>
+        <span class="logo-e" aria-hidden="true">
+          <span class="e-top"></span>
+          <span class="e-leaf"></span>
+          <span class="e-bottom"></span>
+        </span>
+        <span>&nbsp;N</span>
+        <span class="logo-e" aria-hidden="true">
+          <span class="e-top"></span>
+          <span class="e-leaf"></span>
+          <span class="e-bottom"></span>
+        </span>
+        <span>ST</span>
+      </div>
+
+      <span class="logo-accent" aria-hidden="true">
+        <span class="stem"></span>
+        <span class="leaf"></span>
+        <span class="berry"></span>
+      </span>
+    </div>
 
     <div class="nav-links">
       <a href="#property">The Home</a>
