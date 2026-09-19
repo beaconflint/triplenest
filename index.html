@@ -43,111 +43,9 @@
       box-shadow: 0 2px 10px rgba(0,0,0,.06);
     }
 
-    .logo {
-      display: flex;
-      align-items: center;
-      color: #314b3a;
-      white-space: nowrap;
-    }
-
-    .logo-wordmark {
-      display: flex;
-      align-items: center;
-      gap: 1px;
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      line-height: 1;
-    }
-
-    .logo-e {
-      position: relative;
-      display: inline-block;
-      width: 18px;
-      height: 24px;
-      margin: 0 1px;
-    }
-
-    .logo-e::before {
-      content: "";
-      position: absolute;
-      left: 2px;
-      top: 1px;
-      width: 3px;
-      height: 22px;
-      background: #314b3a;
-      border-radius: 2px;
-    }
-
-    .logo-e .e-top,
-    .logo-e .e-bottom {
-      position: absolute;
-      left: 2px;
-      width: 15px;
-      height: 3px;
-      background: #314b3a;
-      border-radius: 2px;
-    }
-
-    .logo-e .e-top {
-      top: 1px;
-    }
-
-    .logo-e .e-bottom {
-      bottom: 1px;
-    }
-
-    .logo-e .e-leaf {
-      position: absolute;
-      left: 5px;
-      top: 9px;
-      width: 11px;
-      height: 6px;
-      background: #6d856f;
-      border-radius: 100% 0 100% 0;
-      transform: rotate(-8deg);
-    }
-
-    .logo-accent {
-      position: relative;
-      width: 22px;
-      height: 24px;
-      margin-left: 5px;
-      flex: 0 0 auto;
-    }
-
-    .logo-accent .stem {
-      position: absolute;
-      left: 8px;
-      top: 4px;
-      width: 2px;
-      height: 12px;
-      background: #6b5239;
-      transform: rotate(28deg);
-      transform-origin: bottom center;
-      border-radius: 2px;
-    }
-
-    .logo-accent .leaf {
-      position: absolute;
-      left: 1px;
-      top: 4px;
-      width: 11px;
-      height: 6px;
-      background: #6d856f;
-      border-radius: 100% 0 100% 0;
-      transform: rotate(-20deg);
-    }
-
-    .logo-accent .berry {
-      position: absolute;
-      right: 1px;
-      bottom: 2px;
-      width: 8px;
-      height: 8px;
-      background: #a74f42;
-      border-radius: 50%;
-    }
+    .logo { display:flex; align-items:center; gap:10px; color:#314b3a; white-space:nowrap; }
+    .logo-mark { width:66px; height:38px; display:block; flex:0 0 auto; }
+    .logo-text { font-size:24px; font-weight:700; letter-spacing:1px; line-height:1; }
 
     .nav-links a {
       text-decoration: none;
@@ -519,22 +417,6 @@
         display: none;
       }
 
-      .logo-wordmark {
-        font-size: 21px;
-      }
-
-      .logo-e {
-        transform: scale(.9);
-        transform-origin: center;
-        margin: 0;
-      }
-
-      .logo-accent {
-        transform: scale(.9);
-        transform-origin: left center;
-        margin-left: 2px;
-      }
-
       .hero {
         min-height: 520px;
         padding: 50px 6%;
@@ -588,27 +470,18 @@
 
   <nav>
     <div class="logo" aria-label="Triple Nest">
-      <div class="logo-wordmark">
-        <span>TRIPL</span>
-        <span class="logo-e" aria-hidden="true">
-          <span class="e-top"></span>
-          <span class="e-leaf"></span>
-          <span class="e-bottom"></span>
-        </span>
-        <span>&nbsp;N</span>
-        <span class="logo-e" aria-hidden="true">
-          <span class="e-top"></span>
-          <span class="e-leaf"></span>
-          <span class="e-bottom"></span>
-        </span>
-        <span>ST</span>
-      </div>
-
-      <span class="logo-accent" aria-hidden="true">
-        <span class="stem"></span>
-        <span class="leaf"></span>
-        <span class="berry"></span>
-      </span>
+      <svg class="logo-mark" viewBox="0 0 92 48" aria-hidden="true">
+        <path d="M5 39 C26 35,55 37,87 31" fill="none" stroke="#6b5239" stroke-width="3.2" stroke-linecap="round"/>
+        <path d="M28 30 C38 39,61 39,71 30 C62 34,38 34,28 30Z" fill="#b08a5a"/>
+        <path d="M29 29 C39 33,61 33,70 29" fill="none" stroke="#7d6042" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="40" cy="27" r="5.2" fill="#d9c89d"/><circle cx="50" cy="25.5" r="5.5" fill="#e5d5aa"/><circle cx="60" cy="27" r="5.2" fill="#d9c89d"/>
+        <path d="M35.8 26 L31.5 27.8 L35.8 29" fill="#c78b45"/><path d="M44.8 24.5 L40.2 26.2 L44.8 27.2" fill="#c78b45"/><path d="M64.2 26 L68.5 27.8 L64.2 29" fill="#c78b45"/>
+        <circle cx="39" cy="25.8" r=".7" fill="#314b3a"/><circle cx="49" cy="24.2" r=".7" fill="#314b3a"/><circle cx="61" cy="25.8" r=".7" fill="#314b3a"/>
+        <ellipse cx="18" cy="21" rx="9.5" ry="12" fill="#314b3a"/><circle cx="20.5" cy="11.5" r="6.5" fill="#314b3a"/>
+        <path d="M26 11 L32 13.5 L26 15Z" fill="#c78b45"/><path d="M10.5 20 C4 17,2 13,3 9 C8 13,12 14,15 15Z" fill="#425f4a"/>
+        <circle cx="22" cy="10.5" r=".9" fill="#fff"/>
+      </svg>
+      <span class="logo-text">TRIPLE NEST</span>
     </div>
 
     <div class="nav-links">
