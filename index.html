@@ -29,9 +29,7 @@
       line-height: 1.6;
     }
 
-    /* =========================
-       NAVIGATION
-    ========================= */
+    /* NAVIGATION */
 
     nav {
       background: #ffffff;
@@ -63,23 +61,17 @@
       color: #6d856f;
     }
 
-    /* =========================
-       HERO
-    ========================= */
+    /* HERO */
 
     .hero {
       min-height: 620px;
-
       background:
         linear-gradient(rgba(25,35,29,.42), rgba(25,35,29,.48)),
         url("https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1800&q=85");
-
       background-size: cover;
       background-position: center;
-
       display: flex;
       align-items: center;
-
       padding: 60px 8%;
       color: white;
     }
@@ -128,9 +120,7 @@
       opacity: .92;
     }
 
-    /* =========================
-       GENERAL
-    ========================= */
+    /* GENERAL */
 
     section {
       padding: 80px 8%;
@@ -153,9 +143,7 @@
       margin: auto;
     }
 
-    /* =========================
-       PROPERTY
-    ========================= */
+    /* PROPERTY */
 
     .property {
       background: white;
@@ -211,9 +199,7 @@
       color: #777;
     }
 
-    /* =========================
-       GALLERY
-    ========================= */
+    /* GALLERY */
 
     .gallery {
       background: #f1efe8;
@@ -241,9 +227,7 @@
       margin-top: 18px;
     }
 
-    /* =========================
-       AVAILABILITY
-    ========================= */
+    /* AVAILABILITY */
 
     .availability {
       background: #314b3a;
@@ -266,9 +250,7 @@
       background: #e8ddc4;
     }
 
-    /* =========================
-       COMPACT FORMS
-    ========================= */
+    /* FORMS */
 
     .rental-interest {
       background: #ffffff;
@@ -402,9 +384,18 @@
       border-radius: 4px;
     }
 
-    /* =========================
-       FOOTER
-    ========================= */
+    .error-message {
+      display: none;
+      margin-top: 20px;
+      padding: 14px 18px;
+      text-align: center;
+      background: #f5e5e2;
+      color: #7a332b;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    /* FOOTER */
 
     footer {
       background: #202923;
@@ -418,12 +409,9 @@
       color: white;
     }
 
-    /* =========================
-       MOBILE
-    ========================= */
+    /* MOBILE */
 
     @media (max-width: 800px) {
-
       nav {
         padding: 16px 5%;
       }
@@ -481,18 +469,10 @@
   </style>
 </head>
 
-
 <body>
 
-  <!-- =========================
-       NAVIGATION
-  ========================== -->
-
   <nav>
-
-    <div class="logo">
-      TRIPLE NEST
-    </div>
+    <div class="logo">TRIPLE NEST</div>
 
     <div class="nav-links">
       <a href="#property">The Home</a>
@@ -501,21 +481,13 @@
       <a href="#rental-interest">Rental Interest</a>
       <a href="#contact">Contact</a>
     </div>
-
   </nav>
 
 
-  <!-- =========================
-       HERO
-  ========================== -->
-
   <header class="hero">
-
     <div class="hero-content">
 
-      <div class="coming-soon">
-        COMING SOON
-      </div>
+      <div class="coming-soon">COMING SOON</div>
 
       <h1>A Place to Call Home.</h1>
 
@@ -529,37 +501,28 @@
       </a>
 
     </div>
-
   </header>
 
-
-  <!-- =========================
-       PROPERTY
-  ========================== -->
 
   <section class="property" id="property">
 
     <div class="section-title">
-
       <h2>The Home</h2>
 
       <p>
         Triple Nest LLC is preparing this property for future residents.
         Additional information will be added as renovations progress.
       </p>
-
     </div>
 
 
     <div class="property-grid">
 
       <div class="property-image">
-
         <img
           src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=85"
           alt="Sample residential home"
         >
-
       </div>
 
 
@@ -597,28 +560,20 @@
           </div>
 
         </div>
-
       </div>
 
     </div>
-
   </section>
 
-
-  <!-- =========================
-       GALLERY
-  ========================== -->
 
   <section class="gallery" id="gallery">
 
     <div class="section-title">
-
       <h2>Property Preview</h2>
 
       <p>
         Current property photographs will be added as improvements are completed.
       </p>
-
     </div>
 
 
@@ -641,17 +596,12 @@
 
     </div>
 
-
     <p class="photo-note">
       Preview images are temporary examples and do not depict the actual property.
     </p>
 
   </section>
 
-
-  <!-- =========================
-       AVAILABILITY
-  ========================== -->
 
   <section class="availability" id="availability">
 
@@ -671,9 +621,7 @@
   </section>
 
 
-  <!-- =========================
-       RENTAL INTEREST FORM
-  ========================== -->
+  <!-- RENTAL INTEREST -->
 
   <section class="rental-interest" id="rental-interest">
 
@@ -691,14 +639,9 @@
 
     <div class="form-card">
 
-      <form
-        id="rentalForm"
-        action="https://docs.google.com/forms/d/e/1FAIpQLScUImDtZZHWFvzJoACexCCga2LNamKmKUREsj8hGcJ60gQP5A/formResponse"
-        method="POST"
-      >
+      <form id="rentalForm">
 
         <div class="form-grid">
-
 
           <div class="form-group">
 
@@ -707,8 +650,8 @@
             </label>
 
             <input
+              id="rentalName"
               type="text"
-              name="entry.2050813283"
               placeholder="Your name"
               required
             >
@@ -723,8 +666,8 @@
             </label>
 
             <input
+              id="rentalPhone"
               type="tel"
-              name="entry.161135527"
               class="phone-input"
               placeholder="219-555-1234"
               maxlength="12"
@@ -742,8 +685,8 @@
             </label>
 
             <input
+              id="rentalEmail"
               type="email"
-              name="entry.1734043125"
               placeholder="name@example.com"
               required
             >
@@ -758,8 +701,8 @@
             </label>
 
             <input
+              id="rentalMoveIn"
               type="date"
-              name="entry.571921677"
               required
             >
 
@@ -772,26 +715,15 @@
               Number of Occupants <span class="required">*</span>
             </label>
 
-            <select
-              name="entry.882676584"
-              required
-            >
+            <select id="rentalOccupants" required>
 
               <option value="" selected disabled>
                 Select
               </option>
 
-              <option value="1">
-                1
-              </option>
-
-              <option value="2">
-                2
-              </option>
-
-              <option value="3+">
-                3+
-              </option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3+">3+</option>
 
             </select>
 
@@ -804,26 +736,15 @@
               Preferred Lease Length <span class="required">*</span>
             </label>
 
-            <select
-              name="entry.330274947"
-              required
-            >
+            <select id="rentalLease" required>
 
               <option value="" selected disabled>
                 Select
               </option>
 
-              <option value="1 month">
-                1 month
-              </option>
-
-              <option value="2 months">
-                2 months
-              </option>
-
-              <option value="3 months +">
-                3 months +
-              </option>
+              <option value="1 month">1 month</option>
+              <option value="2 months">2 months</option>
+              <option value="3 months +">3 months +</option>
 
             </select>
 
@@ -837,7 +758,7 @@
             </label>
 
             <textarea
-              name="entry.1858520032"
+              id="rentalMessage"
               placeholder="Anything you would like us to know?"
             ></textarea>
 
@@ -851,6 +772,7 @@
           <button
             type="submit"
             class="submit-button"
+            id="rentalSubmit"
           >
             Submit Rental Interest
           </button>
@@ -871,16 +793,21 @@
           Thank you! Your rental interest has been submitted.
         </div>
 
+
+        <div
+          class="error-message"
+          id="rentalError"
+        >
+          We could not submit your information. Please try again.
+        </div>
+
       </form>
 
     </div>
-
   </section>
 
 
-  <!-- =========================
-       CONTACT FORM
-  ========================== -->
+  <!-- CONTACT -->
 
   <section class="contact" id="contact">
 
@@ -904,7 +831,6 @@
       >
 
         <div class="form-grid">
-
 
           <div class="form-group">
 
@@ -984,10 +910,6 @@
   </section>
 
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
-
   <footer>
 
     <strong>Triple Nest LLC</strong>
@@ -1003,7 +925,6 @@
   </footer>
 
 
-  <!-- Hidden area used for fresh Google submission iframes -->
   <div
     id="googleFormTargets"
     style="display:none;"
@@ -1011,25 +932,18 @@
   ></div>
 
 
-  <!-- =========================
-       JAVASCRIPT
-  ========================== -->
-
   <script>
 
-    /*
-      PHONE NUMBER FORMATTING
-      Converts:
-      2195551234
-      into:
-      219-555-1234
-    */
+    /* ================================
+       PHONE FORMATTING
+    ================================= */
 
     document.querySelectorAll(".phone-input").forEach(function(input) {
 
       input.addEventListener("input", function() {
 
-        let numbers = this.value.replace(/\D/g, "").slice(0, 10);
+        let numbers =
+          this.value.replace(/\D/g, "").slice(0, 10);
 
         if (numbers.length > 6) {
 
@@ -1055,19 +969,17 @@
     });
 
 
-    /*
-      Require exactly 10 digits for phone numbers.
-    */
-
     function phoneIsValid(form) {
 
-      const phone = form.querySelector(".phone-input");
+      const phone =
+        form.querySelector(".phone-input");
 
       if (!phone) {
         return true;
       }
 
-      const digits = phone.value.replace(/\D/g, "");
+      const digits =
+        phone.value.replace(/\D/g, "");
 
       if (digits.length !== 10) {
 
@@ -1086,172 +998,286 @@
     }
 
 
-    /*
-      GOOGLE FORMS SUBMISSION
+    /* ================================
+       RENTAL INTEREST
+       APPS SCRIPT SUBMISSION
+    ================================= */
 
-      IMPORTANT:
-      A brand-new hidden iframe is created for EVERY
-      submission.
+    const RENTAL_SCRIPT_URL =
+      "https://script.google.com/macros/s/AKfycbwrfay9aZJ-q3q_1a_nkgJ3aAlLepYbdlhV-c5lDa8qAwkc1uLUWNtYH7LZATPBG-ooMw/exec";
 
-      This prevents a previous Google Forms iframe/session
-      from being reused when somebody submits the form
-      again without refreshing this website.
-    */
 
-    function setupGoogleForm(formId, successId) {
+    const rentalForm =
+      document.getElementById("rentalForm");
 
-      const form = document.getElementById(formId);
-      const success = document.getElementById(successId);
+    const rentalSuccess =
+      document.getElementById("rentalSuccess");
 
-      form.addEventListener("submit", function(event) {
+    const rentalError =
+      document.getElementById("rentalError");
+
+    const rentalSubmit =
+      document.getElementById("rentalSubmit");
+
+
+    rentalForm.addEventListener(
+      "submit",
+      async function(event) {
 
         event.preventDefault();
 
-        if (!form.checkValidity()) {
 
-          form.reportValidity();
+        if (!rentalForm.checkValidity()) {
+
+          rentalForm.reportValidity();
           return;
 
         }
 
-        if (!phoneIsValid(form)) {
+
+        if (!phoneIsValid(rentalForm)) {
           return;
         }
 
 
-        const submitButton =
-          form.querySelector(".submit-button");
+        rentalSuccess.style.display = "none";
+        rentalError.style.display = "none";
 
-        submitButton.disabled = true;
-        submitButton.textContent = "Submitting...";
-
-        success.style.display = "none";
+        rentalSubmit.disabled = true;
+        rentalSubmit.textContent = "Submitting...";
 
 
-        /*
-          Generate a completely unique iframe name
-          for this individual submission.
-        */
+        const data = {
 
-        const targetName =
-          "google_form_" +
-          Date.now() +
-          "_" +
-          Math.random().toString(36).substring(2);
+          fullName:
+            document.getElementById(
+              "rentalName"
+            ).value.trim(),
+
+          phone:
+            document.getElementById(
+              "rentalPhone"
+            ).value.trim(),
+
+          email:
+            document.getElementById(
+              "rentalEmail"
+            ).value.trim(),
+
+          moveInDate:
+            document.getElementById(
+              "rentalMoveIn"
+            ).value,
+
+          occupants:
+            document.getElementById(
+              "rentalOccupants"
+            ).value,
+
+          leaseLength:
+            document.getElementById(
+              "rentalLease"
+            ).value,
+
+          message:
+            document.getElementById(
+              "rentalMessage"
+            ).value.trim()
+
+        };
 
 
-        const iframe =
-          document.createElement("iframe");
-
-        iframe.name = targetName;
-        iframe.id = targetName;
-
-        iframe.style.display = "none";
-
-
-        document
-          .getElementById("googleFormTargets")
-          .appendChild(iframe);
-
-
-        /*
-          Send THIS submission to the brand-new iframe.
-        */
-
-        form.target = targetName;
-
-
-        let submissionStarted = false;
-
-
-        iframe.addEventListener("load", function() {
+        try {
 
           /*
-            Ignore the iframe's initial blank load.
+            text/plain avoids the browser sending
+            an OPTIONS preflight request to Apps Script.
           */
 
-          if (!submissionStarted) {
+          await fetch(
+            RENTAL_SCRIPT_URL,
+            {
+              method: "POST",
+
+              headers: {
+                "Content-Type": "text/plain;charset=utf-8"
+              },
+
+              body: JSON.stringify(data),
+
+              redirect: "follow"
+            }
+          );
+
+
+          /*
+            Apps Script accepted the request.
+            Clear the form immediately.
+          */
+
+          rentalForm.reset();
+
+          rentalSuccess.style.display = "block";
+
+
+        } catch (error) {
+
+          console.error(
+            "Rental form submission error:",
+            error
+          );
+
+          rentalError.style.display = "block";
+
+        } finally {
+
+          rentalSubmit.disabled = false;
+
+          rentalSubmit.textContent =
+            "Submit Rental Interest";
+
+        }
+
+      }
+    );
+
+
+    /* ================================
+       CONTACT FORM
+       KEEP EXISTING GOOGLE METHOD
+    ================================= */
+
+    function setupGoogleContactForm() {
+
+      const form =
+        document.getElementById("contactForm");
+
+      const success =
+        document.getElementById("contactSuccess");
+
+
+      form.addEventListener(
+        "submit",
+        function(event) {
+
+          event.preventDefault();
+
+
+          if (!form.checkValidity()) {
+
+            form.reportValidity();
+            return;
+
+          }
+
+
+          if (!phoneIsValid(form)) {
             return;
           }
 
 
-          /*
-            Google has finished responding to this
-            particular POST request.
-          */
-
-          setTimeout(function() {
-
-            success.style.display = "block";
-
-            form.reset();
-
-            submitButton.disabled = false;
+          const submitButton =
+            form.querySelector(".submit-button");
 
 
-            if (formId === "rentalForm") {
+          submitButton.disabled = true;
+          submitButton.textContent = "Submitting...";
 
-              submitButton.textContent =
-                "Submit Rental Interest";
-
-            } else {
-
-              submitButton.textContent =
-                "Send Message";
-
-            }
+          success.style.display = "none";
 
 
-            /*
-              Remove the old target entirely.
-              The next submission gets another new iframe.
-            */
+          const targetName =
+            "google_contact_" +
+            Date.now() +
+            "_" +
+            Math.random()
+              .toString(36)
+              .substring(2);
 
-            form.removeAttribute("target");
 
-            setTimeout(function() {
+          const iframe =
+            document.createElement("iframe");
 
-              if (iframe.parentNode) {
-                iframe.parentNode.removeChild(iframe);
+
+          iframe.name = targetName;
+          iframe.id = targetName;
+          iframe.style.display = "none";
+
+
+          document
+            .getElementById("googleFormTargets")
+            .appendChild(iframe);
+
+
+          form.target = targetName;
+
+
+          let submissionStarted = false;
+
+
+          iframe.addEventListener(
+            "load",
+            function() {
+
+              if (!submissionStarted) {
+                return;
               }
 
-            }, 1000);
+
+              setTimeout(
+                function() {
+
+                  success.style.display =
+                    "block";
+
+                  form.reset();
+
+                  submitButton.disabled =
+                    false;
+
+                  submitButton.textContent =
+                    "Send Message";
+
+                  form.removeAttribute(
+                    "target"
+                  );
 
 
-          }, 300);
+                  setTimeout(
+                    function() {
 
-        });
+                      if (iframe.parentNode) {
+
+                        iframe.parentNode
+                          .removeChild(iframe);
+
+                      }
+
+                    },
+                    1000
+                  );
+
+                },
+                300
+              );
+
+            }
+          );
 
 
-        /*
-          Now actually POST the form to Google.
-        */
+          submissionStarted = true;
 
-        submissionStarted = true;
+          form.submit();
 
-        form.submit();
-
-      });
+        }
+      );
 
     }
 
 
-    /*
-      Activate both forms.
-    */
-
-    setupGoogleForm(
-      "rentalForm",
-      "rentalSuccess"
-    );
-
-    setupGoogleForm(
-      "contactForm",
-      "contactSuccess"
-    );
+    setupGoogleContactForm();
 
   </script>
-
 
 </body>
 </html>
