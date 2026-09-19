@@ -935,6 +935,23 @@
   <script>
 
     /* ================================
+       BLOCK PAST MOVE-IN DATES
+    ================================= */
+
+    const moveInInput =
+      document.getElementById("rentalMoveIn");
+
+    const today = new Date();
+
+    const localToday =
+      today.getFullYear() + "-" +
+      String(today.getMonth() + 1).padStart(2, "0") + "-" +
+      String(today.getDate()).padStart(2, "0");
+
+    moveInInput.min = localToday;
+
+
+    /* ================================
        PHONE FORMATTING
     ================================= */
 
@@ -1116,6 +1133,12 @@
           */
 
           rentalForm.reset();
+
+          /*
+            Keep the minimum date after reset.
+          */
+
+          moveInInput.min = localToday;
 
           rentalSuccess.style.display = "block";
 
