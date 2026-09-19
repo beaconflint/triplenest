@@ -108,6 +108,17 @@
       text-decoration: none;
       border-radius: 4px;
       font-weight: bold;
+      transition: .2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      opacity: .92;
+    }
+
+    .green-button {
+      background: #314b3a;
+      color: #ffffff;
     }
 
     /* GENERAL */
@@ -238,21 +249,54 @@
 
     .availability .button {
       background: #e8ddc4;
+      color: #314b3a;
+    }
+
+    /* RENTAL INTEREST */
+
+    .interest {
+      background: #ffffff;
+    }
+
+    .interest-box {
+      max-width: 800px;
+      margin: auto;
+      background: #f3f1ea;
+      padding: 55px 45px;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .interest-box h2 {
+      color: #314b3a;
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .interest-box p {
+      color: #666;
+      max-width: 650px;
+      margin: 0 auto 28px;
+    }
+
+    .interest-box small {
+      display: block;
+      color: #888;
+      max-width: 620px;
+      margin: 22px auto 0;
+      line-height: 1.5;
     }
 
     /* CONTACT */
 
     .contact {
-      background: white;
+      background: #f1efe8;
     }
 
     .contact-box {
       max-width: 750px;
       margin: auto;
-      background: #f3f1ea;
-      padding: 45px;
       text-align: center;
-      border-radius: 5px;
     }
 
     .contact-box h2 {
@@ -263,11 +307,7 @@
 
     .contact-box p {
       color: #666;
-      margin-bottom: 20px;
-    }
-
-    .contact-box small {
-      color: #888;
+      margin-bottom: 25px;
     }
 
     /* FOOTER */
@@ -330,8 +370,8 @@
         height: 300px;
       }
 
-      .contact-box {
-        padding: 30px 20px;
+      .interest-box {
+        padding: 35px 20px;
       }
     }
   </style>
@@ -343,14 +383,17 @@
   <!-- NAVIGATION -->
 
   <nav>
+
     <div class="logo">TRIPLE NEST</div>
 
     <div class="nav-links">
       <a href="#property">The Home</a>
       <a href="#gallery">Gallery</a>
       <a href="#availability">Availability</a>
+      <a href="#interest">Rental Interest</a>
       <a href="#contact">Contact</a>
     </div>
+
   </nav>
 
 
@@ -383,11 +426,14 @@
   <section class="property" id="property">
 
     <div class="section-title">
+
       <h2>The Home</h2>
+
       <p>
         Triple Nest LLC is preparing this property for future residents.
         Additional information will be added as renovations progress.
       </p>
+
     </div>
 
 
@@ -495,9 +541,41 @@
       will be posted here when the property is ready.
     </p>
 
-    <a class="button" href="#contact">
+    <a class="button" href="#interest">
       Rental Interest
     </a>
+
+  </section>
+
+
+  <!-- RENTAL INTEREST -->
+
+  <section class="interest" id="interest">
+
+    <div class="interest-box">
+
+      <h2>Interested in This Home?</h2>
+
+      <p>
+        The property is currently being prepared for future rental
+        availability. If you would like to hear about future availability,
+        you may submit your information to our rental interest list.
+      </p>
+
+      <a
+        class="button green-button"
+        href="https://docs.google.com/forms/d/e/1FAIpQLScUImDtZZHWFvzJoACexCCga2LNamKmKUREsj8hGcJ60gQP5A/viewform"
+        target="_blank"
+        rel="noopener noreferrer">
+        Submit Rental Interest
+      </a>
+
+      <small>
+        Submitting an interest form is not a rental application and does
+        not guarantee availability, approval, or reservation of the property.
+      </small>
+
+    </div>
 
   </section>
 
@@ -508,17 +586,21 @@
 
     <div class="contact-box">
 
-      <h2>Interested in the Property?</h2>
+      <h2>Contact Triple Nest</h2>
 
       <p>
-        A rental-interest form will be available here in the future.
-        Prospective residents will be able to provide their contact
-        information and preferred move-in date.
+        Have a question about future rental availability?
+        You can send your contact information and questions through
+        our rental interest form.
       </p>
 
-      <small>
-        No applications are currently being accepted.
-      </small>
+      <a
+        class="button green-button"
+        href="https://docs.google.com/forms/d/e/1FAIpQLScUImDtZZHWFvzJoACexCCga2LNamKmKUREsj8hGcJ60gQP5A/viewform"
+        target="_blank"
+        rel="noopener noreferrer">
+        Contact Us
+      </a>
 
     </div>
 
