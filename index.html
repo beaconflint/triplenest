@@ -4,15 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Triple Nest | Rental Home</title>
-
-  <meta
-    name="description"
-    content="Triple Nest LLC rental property. A three-bedroom home currently being prepared for future availability."
-  >
+  <title>Triple Nest | Room Rental</title>
+  <meta name="description" content="Triple Nest LLC rental property. Rooms in a three-bedroom home being prepared for future availability.">
 
   <style>
-
     * {
       box-sizing: border-box;
       margin: 0;
@@ -30,10 +25,7 @@
       line-height: 1.6;
     }
 
-
-    /* =========================
-       NAVIGATION
-       ========================= */
+    /* NAVIGATION */
 
     nav {
       background: #ffffff;
@@ -65,27 +57,17 @@
       color: #6d856f;
     }
 
-
-    /* =========================
-       HERO
-       ========================= */
+    /* HERO */
 
     .hero {
       min-height: 620px;
-
       background:
-        linear-gradient(
-          rgba(25,35,29,.42),
-          rgba(25,35,29,.48)
-        ),
+        linear-gradient(rgba(25,35,29,.42), rgba(25,35,29,.48)),
         url("https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1800&q=85");
-
       background-size: cover;
       background-position: center;
-
       display: flex;
       align-items: center;
-
       padding: 60px 8%;
       color: white;
     }
@@ -96,17 +78,13 @@
 
     .coming-soon {
       display: inline-block;
-
       background: #e8ddc4;
       color: #314b3a;
-
       padding: 8px 15px;
       border-radius: 30px;
-
       font-size: 12px;
       font-weight: bold;
       letter-spacing: 1.5px;
-
       margin-bottom: 20px;
     }
 
@@ -124,29 +102,22 @@
 
     .button {
       display: inline-block;
-
       padding: 14px 25px;
-
       background: #ffffff;
       color: #314b3a;
-
       text-decoration: none;
+      border: none;
       border-radius: 4px;
-
       font-weight: bold;
-
-      transition: .2s;
+      cursor: pointer;
+      font-size: 14px;
     }
 
     .button:hover {
-      transform: translateY(-1px);
-      opacity: .92;
+      opacity: .9;
     }
 
-
-    /* =========================
-       GENERAL
-       ========================= */
+    /* GENERAL */
 
     section {
       padding: 80px 8%;
@@ -169,10 +140,7 @@
       margin: auto;
     }
 
-
-    /* =========================
-       PROPERTY
-       ========================= */
+    /* PROPERTY */
 
     .property {
       background: white;
@@ -181,10 +149,8 @@
     .property-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-
       gap: 60px;
       align-items: center;
-
       max-width: 1200px;
       margin: auto;
     }
@@ -192,7 +158,6 @@
     .property-image img {
       width: 100%;
       height: 450px;
-
       object-fit: cover;
       border-radius: 5px;
     }
@@ -231,10 +196,7 @@
       color: #777;
     }
 
-
-    /* =========================
-       GALLERY
-       ========================= */
+    /* GALLERY */
 
     .gallery {
       background: #f1efe8;
@@ -243,39 +205,30 @@
     .gallery-grid {
       max-width: 1200px;
       margin: auto;
-
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-
       gap: 15px;
     }
 
     .gallery-grid img {
       width: 100%;
       height: 280px;
-
       object-fit: cover;
       border-radius: 4px;
     }
 
     .photo-note {
       text-align: center;
-
       font-size: 12px;
       color: #888;
-
       margin-top: 18px;
     }
 
-
-    /* =========================
-       AVAILABILITY
-       ========================= */
+    /* AVAILABILITY */
 
     .availability {
       background: #314b3a;
       color: white;
-
       text-align: center;
     }
 
@@ -286,9 +239,7 @@
 
     .availability p {
       max-width: 700px;
-
       margin: 0 auto 30px;
-
       color: #e1e7e2;
     }
 
@@ -296,99 +247,148 @@
       background: #e8ddc4;
     }
 
+    /* COMPACT FORMS */
 
-    /* =========================
-       EMBEDDED FORMS
-       ========================= */
-
-    .form-section {
+    .rental-interest {
       background: #ffffff;
     }
 
-    .form-wrapper {
-      max-width: 900px;
+    .form-container {
+      max-width: 760px;
       margin: auto;
     }
 
     .form-heading {
       text-align: center;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
     }
 
     .form-heading h2 {
       color: #314b3a;
-
-      font-size: 36px;
-      margin-bottom: 12px;
+      font-size: 34px;
+      margin-bottom: 8px;
     }
 
     .form-heading p {
       color: #666;
-
-      max-width: 680px;
-      margin: auto;
     }
 
-    .form-container {
+    .compact-form {
       background: #f3f1ea;
-
-      padding: 25px;
-
+      padding: 35px;
       border-radius: 7px;
-
       box-shadow: 0 3px 15px rgba(0,0,0,.05);
     }
 
-    .form-container iframe {
-      width: 100%;
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
 
-      border: none;
+    .form-group {
+      margin-bottom: 18px;
+    }
 
+    .form-row .form-group {
+      margin-bottom: 0;
+    }
+
+    .compact-form label {
       display: block;
-
-      background: transparent;
+      font-size: 13px;
+      font-weight: bold;
+      color: #314b3a;
+      margin-bottom: 6px;
     }
 
-    .interest-frame {
-      height: 1250px;
+    .compact-form input,
+    .compact-form select,
+    .compact-form textarea {
+      width: 100%;
+      padding: 12px 13px;
+      border: 1px solid #d5d2c8;
+      border-radius: 4px;
+      background: #ffffff;
+      color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      outline: none;
     }
 
-    .contact-frame {
-      height: 850px;
+    .compact-form input:focus,
+    .compact-form select:focus,
+    .compact-form textarea:focus {
+      border-color: #6d856f;
+      box-shadow: 0 0 0 2px rgba(109,133,111,.12);
+    }
+
+    .compact-form textarea {
+      min-height: 95px;
+      resize: vertical;
+    }
+
+    .required {
+      color: #9b4d43;
+    }
+
+    .form-button-area {
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .submit-button {
+      background: #314b3a;
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background: #253b2d;
     }
 
     .form-note {
       text-align: center;
-
-      color: #777;
       font-size: 12px;
-
-      margin-top: 18px;
+      color: #777;
+      margin-top: 16px;
     }
 
+    .success-message {
+      display: none;
+      margin-top: 18px;
+      padding: 14px;
+      background: #e5eee7;
+      color: #314b3a;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+    }
 
-    /* =========================
-       CONTACT
-       ========================= */
+    /* CONTACT */
 
     .contact {
       background: #f1efe8;
     }
 
+    .contact .form-container {
+      max-width: 650px;
+    }
 
-    /* =========================
-       FOOTER
-       ========================= */
+    /* FOOTER */
 
     footer {
       background: #202923;
-
       color: #bbb;
-
       text-align: center;
-
       padding: 30px 20px;
-
       font-size: 13px;
     }
 
@@ -396,10 +396,13 @@
       color: white;
     }
 
+    /* HIDDEN GOOGLE FORM TARGETS */
 
-    /* =========================
-       MOBILE
-       ========================= */
+    .hidden-frame {
+      display: none;
+    }
+
+    /* MOBILE */
 
     @media (max-width: 800px) {
 
@@ -425,7 +428,7 @@
       }
 
       section {
-        padding: 60px 5%;
+        padding: 60px 6%;
       }
 
       .property-grid {
@@ -437,10 +440,6 @@
         height: 320px;
       }
 
-      .features {
-        grid-template-columns: 1fr;
-      }
-
       .gallery-grid {
         grid-template-columns: 1fr;
       }
@@ -449,90 +448,55 @@
         height: 300px;
       }
 
-      .form-container {
-        padding: 8px;
+      .form-row {
+        grid-template-columns: 1fr;
       }
 
-      .interest-frame {
-        height: 1350px;
+      .compact-form {
+        padding: 25px 20px;
       }
 
-      .contact-frame {
-        height: 900px;
+      .form-heading h2 {
+        font-size: 29px;
       }
-
     }
-
   </style>
 </head>
 
 
 <body>
 
-
-  <!-- =========================
-       NAVIGATION
-       ========================= -->
+  <!-- NAVIGATION -->
 
   <nav>
-
-    <div class="logo">
-      TRIPLE NEST
-    </div>
+    <div class="logo">TRIPLE NEST</div>
 
     <div class="nav-links">
-
-      <a href="#property">
-        The Home
-      </a>
-
-      <a href="#gallery">
-        Gallery
-      </a>
-
-      <a href="#availability">
-        Availability
-      </a>
-
-      <a href="#rental-interest">
-        Rental Interest
-      </a>
-
-      <a href="#contact">
-        Contact
-      </a>
-
+      <a href="#property">The Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#availability">Availability</a>
+      <a href="#rental-interest">Rental Interest</a>
+      <a href="#contact">Contact</a>
     </div>
-
   </nav>
 
 
-
-  <!-- =========================
-       HERO
-       ========================= -->
+  <!-- HERO -->
 
   <header class="hero">
 
     <div class="hero-content">
 
-      <div class="coming-soon">
-        COMING SOON
-      </div>
+      <div class="coming-soon">COMING SOON</div>
 
-      <h1>
-        A Place to Call Home.
-      </h1>
+      <h1>A Place to Call Home.</h1>
 
       <p>
-        A three-bedroom home currently being prepared
+        Rooms in a three-bedroom home currently being prepared
         for future rental availability.
       </p>
 
-      <a
-        class="button"
-        href="#property"
-      >
+      <a class="button" href="#property">
         Learn More
       </a>
 
@@ -541,51 +505,37 @@
   </header>
 
 
+  <!-- PROPERTY -->
 
-  <!-- =========================
-       PROPERTY
-       ========================= -->
-
-  <section
-    class="property"
-    id="property"
-  >
+  <section class="property" id="property">
 
     <div class="section-title">
-
-      <h2>
-        The Home
-      </h2>
+      <h2>The Home</h2>
 
       <p>
         Triple Nest LLC is preparing this property for future residents.
-        Additional information will be added as renovations progress.
+        Additional information will be added as improvements progress.
       </p>
-
     </div>
 
 
     <div class="property-grid">
 
-
       <div class="property-image">
 
         <img
           src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=85"
-          alt="Sample residential home"
-        >
+          alt="Sample residential home">
 
       </div>
 
 
       <div class="property-text">
 
-        <h3>
-          Comfortable Residential Living
-        </h3>
+        <h3>Comfortable Residential Living</h3>
 
         <p>
-          The property is currently being improved and prepared for rental.
+          The property is currently being improved and prepared for room rentals.
           Once the home is ready, this website will provide updated photographs,
           rental details and availability information.
         </p>
@@ -594,54 +544,23 @@
         <div class="features">
 
           <div class="feature">
-
-            <strong>
-              3 Bedrooms
-            </strong>
-
-            <span>
-              Residential home
-            </span>
-
+            <strong>3 Bedrooms</strong>
+            <span>Private room rentals</span>
           </div>
 
-
           <div class="feature">
-
-            <strong>
-              Future Rental
-            </strong>
-
-            <span>
-              Availability to be announced
-            </span>
-
+            <strong>Future Availability</strong>
+            <span>Availability to be announced</span>
           </div>
 
-
           <div class="feature">
-
-            <strong>
-              Improvements
-            </strong>
-
-            <span>
-              Property preparation underway
-            </span>
-
+            <strong>Improvements</strong>
+            <span>Property preparation underway</span>
           </div>
 
-
           <div class="feature">
-
-            <strong>
-              More Details
-            </strong>
-
-            <span>
-              Coming as the home is completed
-            </span>
-
+            <strong>More Details</strong>
+            <span>Coming as the home is completed</span>
           </div>
 
         </div>
@@ -653,21 +572,13 @@
   </section>
 
 
+  <!-- GALLERY -->
 
-  <!-- =========================
-       GALLERY
-       ========================= -->
-
-  <section
-    class="gallery"
-    id="gallery"
-  >
+  <section class="gallery" id="gallery">
 
     <div class="section-title">
 
-      <h2>
-        Property Preview
-      </h2>
+      <h2>Property Preview</h2>
 
       <p>
         Current property photographs will be added as improvements are completed.
@@ -678,26 +589,19 @@
 
     <div class="gallery-grid">
 
-
       <img
         src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
-        alt="Sample home exterior"
-      >
-
+        alt="Sample home exterior">
 
       <img
         src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80"
-        alt="Sample living room"
-      >
-
+        alt="Sample living room">
 
       <img
         src="https://images.unsplash.com/photo-1560185008-b033106af5c3?auto=format&fit=crop&w=900&q=80"
-        alt="Sample home interior"
-      >
+        alt="Sample home interior">
 
     </div>
-
 
     <p class="photo-note">
       Preview images are temporary examples and do not depict the actual property.
@@ -706,147 +610,306 @@
   </section>
 
 
+  <!-- AVAILABILITY -->
 
-  <!-- =========================
-       AVAILABILITY
-       ========================= -->
+  <section class="availability" id="availability">
 
-  <section
-    class="availability"
-    id="availability"
-  >
-
-    <h2>
-      Future Availability
-    </h2>
+    <h2>Future Availability</h2>
 
     <p>
-      The home is not currently available for rent.
+      Rooms are not currently available for rent.
       Renovation and preparation work is underway.
       Rental information, pricing and expected availability
       will be posted here when the property is ready.
     </p>
 
-
-    <a
-      class="button"
-      href="#rental-interest"
-    >
+    <a class="button" href="#rental-interest">
       Rental Interest
     </a>
 
   </section>
 
 
+  <!-- RENTAL INTEREST -->
 
-  <!-- =========================
-       RENTAL INTEREST FORM
-       ========================= -->
+  <section class="rental-interest" id="rental-interest">
 
-  <section
-    class="form-section"
-    id="rental-interest"
-  >
-
-    <div class="form-wrapper">
-
+    <div class="form-container">
 
       <div class="form-heading">
 
-        <h2>
-          Interested in This Home?
-        </h2>
+        <h2>Interested in Renting a Room?</h2>
 
         <p>
-          If you would like to hear about future availability,
-          submit your information below.
+          Submit your information below to express interest in future availability.
         </p>
 
       </div>
 
 
-      <div class="form-container">
+      <form
+        class="compact-form"
+        id="rentalForm"
+        action="https://docs.google.com/forms/d/e/1FAIpQLScUImDtZZHWFvzJoACexCCga2LNamKmKUREsj8hGcJ60gQP5A/formResponse"
+        method="POST"
+        target="rentalHiddenFrame">
 
-        <iframe
-          class="interest-frame"
-          src="https://docs.google.com/forms/d/e/1FAIpQLScUImDtZZHWFvzJoACexCCga2LNamKmKUREsj8hGcJ60gQP5A/viewform?embedded=true"
-          title="Triple Nest Rental Interest Form"
-          loading="lazy"
-        >
-          Loading…
-        </iframe>
+        <div class="form-row">
 
-      </div>
+          <div class="form-group">
+            <label>
+              Full Name <span class="required">*</span>
+            </label>
+
+            <input
+              type="text"
+              name="entry.2050813283"
+              placeholder="Your name"
+              required>
+          </div>
 
 
-      <p class="form-note">
-        Submitting an interest form is not a rental application
-        and does not guarantee availability, approval,
-        or reservation of the property.
-      </p>
+          <div class="form-group">
+            <label>
+              Phone Number <span class="required">*</span>
+            </label>
+
+            <input
+              type="tel"
+              name="entry.161135527"
+              class="phone-input"
+              placeholder="219-555-1234"
+              maxlength="12"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              title="Please enter a 10-digit phone number"
+              required>
+          </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+          <div class="form-group">
+            <label>
+              Email Address <span class="required">*</span>
+            </label>
+
+            <input
+              type="email"
+              name="entry.1734043125"
+              placeholder="name@example.com"
+              required>
+          </div>
+
+
+          <div class="form-group">
+            <label>
+              Preferred Move-In Date <span class="required">*</span>
+            </label>
+
+            <input
+              type="date"
+              name="entry.571921677"
+              required>
+          </div>
+
+        </div>
+
+
+        <div class="form-row">
+
+          <div class="form-group">
+            <label>
+              Number of Occupants <span class="required">*</span>
+            </label>
+
+            <select
+              name="entry.882676584"
+              required>
+
+              <option value="" selected disabled>Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3+">3+</option>
+
+            </select>
+          </div>
+
+
+          <div class="form-group">
+            <label>
+              Preferred Lease Length <span class="required">*</span>
+            </label>
+
+            <select
+              name="entry.330274947"
+              required>
+
+              <option value="" selected disabled>Select</option>
+              <option value="1 month">1 month</option>
+              <option value="2 months">2 months</option>
+              <option value="3 months +">3 months +</option>
+
+            </select>
+          </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>
+            Message or Questions
+          </label>
+
+          <textarea
+            name="entry.1858520032"
+            placeholder="Anything you would like us to know?"></textarea>
+
+        </div>
+
+
+        <div class="form-button-area">
+
+          <button class="submit-button" type="submit">
+            Submit Rental Interest
+          </button>
+
+        </div>
+
+
+        <p class="form-note">
+          This is an interest form only and is not a rental application.
+          Submission does not guarantee availability or approval.
+        </p>
+
+
+        <div class="success-message" id="rentalSuccess">
+          Thank you! Your rental interest has been submitted.
+        </div>
+
+      </form>
 
     </div>
 
   </section>
 
 
+  <!-- CONTACT -->
 
-  <!-- =========================
-       CONTACT FORM
-       ========================= -->
+  <section class="contact" id="contact">
 
-  <section
-    class="contact"
-    id="contact"
-  >
-
-    <div class="form-wrapper">
-
+    <div class="form-container">
 
       <div class="form-heading">
 
-        <h2>
-          Contact Triple Nest
-        </h2>
+        <h2>Contact Triple Nest</h2>
 
         <p>
-          Have a question about the property?
-          Send us a message below.
+          Have a question about the property? Send us a message.
         </p>
 
       </div>
 
 
-      <div class="form-container">
+      <form
+        class="compact-form"
+        id="contactForm"
+        action="https://docs.google.com/forms/d/e/1FAIpQLSeMXYcwD-VSyMSRRWSvbY5Va-El2Vz0FPuam_cRcmTeq6SiAw/formResponse"
+        method="POST"
+        target="contactHiddenFrame">
 
-        <iframe
-          class="contact-frame"
-          src="https://docs.google.com/forms/d/e/1FAIpQLSeMXYcwD-VSyMSRRWSvbY5Va-El2Vz0FPuam_cRcmTeq6SiAw/viewform?embedded=true"
-          title="Triple Nest Contact Form"
-          loading="lazy"
-        >
-          Loading…
-        </iframe>
+        <div class="form-row">
 
-      </div>
+          <div class="form-group">
+
+            <label>
+              Full Name <span class="required">*</span>
+            </label>
+
+            <input
+              type="text"
+              name="entry.1219694629"
+              placeholder="Your name"
+              required>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>
+              Phone Number <span class="required">*</span>
+            </label>
+
+            <input
+              type="tel"
+              name="entry.1876292489"
+              class="phone-input"
+              placeholder="219-555-1234"
+              maxlength="12"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              title="Please enter a 10-digit phone number"
+              required>
+
+          </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label>
+            Message <span class="required">*</span>
+          </label>
+
+          <textarea
+            name="entry.1502433135"
+            placeholder="Type your message here..."
+            required></textarea>
+
+        </div>
+
+
+        <div class="form-button-area">
+
+          <button class="submit-button" type="submit">
+            Send Message
+          </button>
+
+        </div>
+
+
+        <div class="success-message" id="contactSuccess">
+          Thank you! Your message has been submitted.
+        </div>
+
+      </form>
 
     </div>
 
   </section>
 
 
+  <!-- GOOGLE FORM HIDDEN TARGETS -->
 
-  <!-- =========================
-       FOOTER
-       ========================= -->
+  <iframe
+    name="rentalHiddenFrame"
+    class="hidden-frame">
+  </iframe>
+
+  <iframe
+    name="contactHiddenFrame"
+    class="hidden-frame">
+  </iframe>
+
+
+  <!-- FOOTER -->
 
   <footer>
 
-    <strong>
-      Triple Nest LLC
-    </strong>
-
-    <br>
+    <strong>Triple Nest LLC</strong><br>
 
     Property Management &nbsp;•&nbsp; Indiana
 
@@ -855,6 +918,74 @@
     © 2026 Triple Nest LLC. All rights reserved.
 
   </footer>
+
+
+  <!-- FORM SCRIPT -->
+
+  <script>
+
+    /* FORMAT PHONE AS XXX-XXX-XXXX */
+
+    document.querySelectorAll(".phone-input").forEach(function(input) {
+
+      input.addEventListener("input", function() {
+
+        let numbers = this.value.replace(/\D/g, "").substring(0, 10);
+
+        if (numbers.length > 6) {
+          this.value =
+            numbers.substring(0, 3) + "-" +
+            numbers.substring(3, 6) + "-" +
+            numbers.substring(6, 10);
+
+        } else if (numbers.length > 3) {
+          this.value =
+            numbers.substring(0, 3) + "-" +
+            numbers.substring(3, 6);
+
+        } else {
+          this.value = numbers;
+        }
+
+      });
+
+    });
+
+
+    /* RENTAL FORM SUCCESS */
+
+    document.getElementById("rentalForm").addEventListener("submit", function() {
+
+      const form = this;
+      const message = document.getElementById("rentalSuccess");
+
+      setTimeout(function() {
+
+        message.style.display = "block";
+        form.reset();
+
+      }, 800);
+
+    });
+
+
+    /* CONTACT FORM SUCCESS */
+
+    document.getElementById("contactForm").addEventListener("submit", function() {
+
+      const form = this;
+      const message = document.getElementById("contactSuccess");
+
+      setTimeout(function() {
+
+        message.style.display = "block";
+        form.reset();
+
+      }, 800);
+
+    });
+
+  </script>
 
 
 </body>
