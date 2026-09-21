@@ -513,7 +513,7 @@
     footer {
       background: #202923;
       color: #bbb;
-      text-align: center;
+      text-align:left;
       padding: 30px 20px;
       font-size: 13px;
     }
@@ -614,6 +614,17 @@
         padding: 25px 20px;
       }
     }
+  
+    @media (min-width: 801px) {
+      footer {
+        text-align: left;
+        padding-left: 8%;
+      }
+      footer > * {
+        margin-left: 0;
+      }
+    }
+
   </style>
 </head>
 
@@ -1065,7 +1076,7 @@
 
   <footer>
 
-    <strong>Triple Nest LLC</strong>
+    <strong>Triple Nest Group LLC</strong>
 
     <br>
 
@@ -1073,7 +1084,7 @@
 
     <br><br>
 
-    © 2026 Triple Nest LLC. All rights reserved.
+    © 2026 Triple Nest Group LLC. All rights reserved.
 
   </footer>
 
